@@ -71,7 +71,7 @@ public class SoThanhChu {
                     docChu += "Twenty";
                     break;
             }
-        }else {
+        }else if(hangChuc == 1){
             switch (hangDonVi){
                 case 9:
                     docChu += " Nineteen";

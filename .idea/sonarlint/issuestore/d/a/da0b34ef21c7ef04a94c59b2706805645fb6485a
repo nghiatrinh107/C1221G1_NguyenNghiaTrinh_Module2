@@ -1,14 +1,0 @@
-
-^
-java:S1659"CDeclare "height" and all following declarations on a separate line.(…ÿì‡ýÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(çÖº¤
-S	java:S106
-"9Replace this use of System.out or System.err by a logger.(Óù…Íúÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(³´“‚þÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(•Ð×ˆ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(© ‚²úÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(”¶ãÖ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(’ºªÂýÿÿÿÿ
-`
-java:S1192"JDefine a constant instead of duplicating this literal "%-20.2f%s" 4 times.(•Ð×ˆ
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¡áíƒ
