@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class XoaKiTuTrongMang {
     public static void main(String[] args) {
         int[] number = {10,4,3,7,8,6,7,7,5,3};
-        int x = 3;
+        int x = 7;
         for (int i = 0; i <number.length ; i++) {
             if (number[number.length-1] == x){
                 number[number.length-1]=0;

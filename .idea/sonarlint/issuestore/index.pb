@@ -5,3 +5,11 @@ p
 @src/ss1_introduction_to_java/thuc_hanh/ThucHanh1KhaiBaoBien.java,6\0\6024bdc788f8a4b8af449b88ca14494319b0d064
 n
 >src/ss1_introduction_to_java/thuc_hanh/PhuongTrinhBacNhat.java,3\4\3460c751fc90e9d0ae011d036ffcaf19cd136975
+h
+8src/ss1_introduction_to_java/thuc_hanh/CanNangCoThe.java,d\a\da0b34ef21c7ef04a94c59b2706805645fb6485a
+b
+2src/ss2_vong_lap_va_mang/thuc_hanh/SoNguyenTo.java,9\a\9aa54b3dbd7478b35fc8eb7557c3a43b951e5d83
+g
+7src/ss3_mang_va_phuong_thuc/thuc_hanh/DaoNguocMang.java,9\b\9b88b86d4b51596b9b1337a491202a030f0b2685
+d
+4src/ss3_mang_va_phuong_thuc/thuc_hanh/SoNhoNhat.java,3\a\3af098d88ec6c9e10adcb701fe36cae7f024f0b4

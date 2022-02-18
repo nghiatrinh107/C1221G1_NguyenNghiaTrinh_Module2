@@ -1,0 +1,11 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Õ†«÷8›¦Ú¿ğ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(”‰è¿ûÿÿÿÿ8¦Ú¿ğ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(†õ“¶øÿÿÿÿ8¦Ú¿ğ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(éˆŸ8 ¦Ú¿ğ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.( æ‡ï8¡¦Ú¿ğ/
+n
+java:S3457 "Q%n should be used in place of \n to produce the platform-specific line separator.(Ü„ç¹8£¦Ú¿ğ/
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(Ü„ç¹8¤¦Ú¿ğ/
+U	java:S106""9Replace this use of System.out or System.err by a logger.( æ‡ï8¥¦Ú¿ğ/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õìé”
