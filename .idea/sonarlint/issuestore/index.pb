@@ -31,5 +31,3 @@ j
 :src/ss3_mang_va_phuong_thuc/bai_tap/ThemKiTuTrongMang.java,f\0\f0e246d8a2a186a16d436db9d8a3f124bb6d008e
 i
 9src/ss3_mang_va_phuong_thuc/bai_tap/XoaKiTuTrongMang.java,e\c\ec6b4f8ff519f57556868d48f39ba4ccd3d40447
-\
-,src/ss4_lop_va_doi_tuong/thuc_hanh/Main.java,3\e\3ee50d587e1878690f866dc69f048da9651dce43
