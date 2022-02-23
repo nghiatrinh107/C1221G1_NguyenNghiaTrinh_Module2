@@ -20,7 +20,10 @@ public class StudentManager {
     }
     // them moi
     public void add(){
-
+        int index =-1;
+//        for (int i = 0; i <students.length ; i++) {
+//            if (students[i])
+//        }
     }
     public void edit(){
 
