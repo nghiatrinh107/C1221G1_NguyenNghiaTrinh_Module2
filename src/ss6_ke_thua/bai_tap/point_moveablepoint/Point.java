@@ -1,13 +1,13 @@
-package ss6_ke_thua.bai_tap.point2D_and_point3D;
+package ss6_ke_thua.bai_tap.point_moveablepoint;
 
-public class Point2D {
+public class Point {
     private float x = 0.0f;
     private float y = 0.0f;
 
-    public Point2D() {
+    public Point() {
     }
 
-    public Point2D(float x, float y) {
+    public Point(float x, float y) {
         this.x = x;
         this.y = y;
     }
@@ -33,13 +33,13 @@ public class Point2D {
         this.y = y;
     }
     public float[] getXY(){
-        float[] arr = {x,y};
+        float[] arr={x,y};
         return arr;
     }
 
     @Override
     public String toString() {
-        return "Point2D{" +
+        return "Point{" +
                 "x=" + x +
                 ", y=" + y +
                 '}';

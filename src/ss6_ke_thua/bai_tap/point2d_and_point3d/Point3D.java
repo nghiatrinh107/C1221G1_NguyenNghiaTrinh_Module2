@@ -1,4 +1,4 @@
-package ss6_ke_thua.bai_tap.point2D_and_point3D;
+package ss6_ke_thua.bai_tap.point2d_and_point3d;
 
 public class Point3D extends Point2D {
     private float z = 0.0f;

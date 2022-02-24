@@ -11,9 +11,9 @@ public class Test {
         double height = Double.parseDouble(scanner.nextLine());
         System.out.println("nhập màu sắc: ");
         String color = scanner.nextLine();
-        Circle circle = new Circle(radius,color);
-        Circle cylinder1 = new Cylinder(radius,height);
-        Cylinder cylinder = new Cylinder(radius,height,color);
+        Circle circle = new Circle(radius, color);
+        Circle cylinder1 = new Cylinder(radius, height);
+        Cylinder cylinder = new Cylinder(radius, height, color);
         System.out.println("nhập bán kính: ");
         System.out.println(circle);
         System.out.println(cylinder);
