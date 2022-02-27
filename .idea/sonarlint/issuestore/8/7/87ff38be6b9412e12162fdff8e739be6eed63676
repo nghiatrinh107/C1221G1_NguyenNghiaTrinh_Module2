@@ -1,0 +1,18 @@
+
+Z
+java:S1659"DDeclare "numberB" and all following declarations on a separate line.(ó´à—
+P
+java:S1854":Remove this useless assignment to local variable "result".(¨àêø
+F
+java:S1481"+Remove this unused "result" local variable.(›¡Ã ıÿÿÿÿ
+P
+java:S1854":Remove this useless assignment to local variable "result".(ÍÔô‚
+F
+java:S1481"+Remove this unused "result" local variable.(›¡Ã ıÿÿÿÿ
+D
+java:S1121".Extract the assignment out of this expression.(ÕÆ¿
+D
+java:S1121".Extract the assignment out of this expression.(¨àêø
+D
+java:S1121".Extract the assignment out of this expression.(ÍÔô‚
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(İ‰Äñùÿÿÿÿ

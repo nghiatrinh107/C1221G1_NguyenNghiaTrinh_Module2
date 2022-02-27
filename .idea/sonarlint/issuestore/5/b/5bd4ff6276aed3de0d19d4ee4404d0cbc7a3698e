@@ -1,0 +1,12 @@
+
+œ
+java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÒÑøïşÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ìõÅÇ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(÷¹ê ûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¤¦ôúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(®ƒÌé
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Æ¸ëå
+Z	java:S106 "9Replace this use of System.out or System.err by a logger.(œùóÔûÿÿÿÿ8¼ÜôÜó/
+o
+java:S2293
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(¬ŒŠ

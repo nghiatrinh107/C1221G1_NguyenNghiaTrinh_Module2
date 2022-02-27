@@ -1,0 +1,16 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ìõÅÇ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(÷¹ê ûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¤¦ôúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(®ƒÌé
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¯Ì­½úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ú–šûÿÿÿÿ
+V
+java:S1854%"@Remove this useless assignment to local variable "licensePlate".(µó†Ú
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(¼ÂŸéúÿÿÿÿ
+G
+java:S1481%"1Remove this unused "licensePlate" local variable.(µó†Ú
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(Ú–šûÿÿÿÿ
+o
+java:S2293
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(èåÛ
