@@ -6,8 +6,8 @@ public class Motorcycle extends Vehicles{
     public Motorcycle() {
     }
 
-    public Motorcycle(String licensePlate, String vehiclesName, int yearOfManufacture, String owner, int cubicCapacity) {
-        super(licensePlate, vehiclesName, yearOfManufacture, owner);
+    public Motorcycle(String licensePlate, Manufacturer manufacturer, int yearOfManufacture, String owner, int cubicCapacity) {
+        super(licensePlate, manufacturer, yearOfManufacture, owner);
         this.cubicCapacity = cubicCapacity;
     }
 
@@ -22,6 +22,7 @@ public class Motorcycle extends Vehicles{
     @Override
     public String toString() {
         return "Motorcycle{" +
+                super.toString()+
                 "cubicCapacity=" + cubicCapacity +
                 '}';
     }

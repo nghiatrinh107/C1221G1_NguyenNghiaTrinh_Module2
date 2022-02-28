@@ -8,8 +8,8 @@ public class Truck extends Vehicles{
     public Truck() {
     }
 
-    public Truck(String licensePlate, String vehiclesName, int yearOfManufacture, String owner, int weight) {
-        super(licensePlate, vehiclesName, yearOfManufacture, owner);
+    public Truck(String licensePlate, Manufacturer manufacturer, int yearOfManufacture, String owner, int weight) {
+        super(licensePlate, manufacturer, yearOfManufacture, owner);
         this.weight = weight;
     }
 

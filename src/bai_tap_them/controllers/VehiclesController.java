@@ -8,6 +8,10 @@ import bai_tap_them.services.impl.TruckServiceImpl;
 import java.util.Scanner;
 
 public class VehiclesController {
+
+
+
+
     static Services truck = new TruckServiceImpl();
     static Services car = new CarServiceImpl();
     static Services motorcycle = new MotorcycleServiceImpl();
@@ -18,7 +22,7 @@ public class VehiclesController {
             System.out.println("Main Menu:\n" +
                     "1. display vehicles\n" +
                     "2. add vehicles\n" +
-                    "4. delete vehicles\n" +
+                    "3. delete vehicles\n" +
                     "0. exit\n");
             System.out.print("choose: ");
             int chooseMenu = Integer.parseInt(scanner.nextLine());
@@ -83,10 +87,11 @@ public class VehiclesController {
                         default:
                             System.out.println("choose: 1, 2, 3");
                     }
+                    break;
                 case 0 :
                     System.exit(0);
                 default:
-                    System.out.println("choose:0, 1, 2, 3, 4");
+                    System.out.println("choose:0, 1, 2, 3");
             }
         }while (flag);
     }
