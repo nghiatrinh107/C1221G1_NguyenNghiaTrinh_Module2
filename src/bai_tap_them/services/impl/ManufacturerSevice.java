@@ -15,16 +15,15 @@ public class ManufacturerSevice {
         manufacturerArrayList.add(new Manufacturer("HSX-006","Toyota","Nhật Bản"));
         manufacturerArrayList.add(new Manufacturer("HSX-007","Hino","Nhật Bản"));
     }
-    public static void DisplayManufacturerName (){
+    public static void displayManufacturerName(){
         for (int i = 0; i < manufacturerArrayList.size(); i++) {
-            System.out.print(manufacturerArrayList.get(i).getCode()+": ");
-            System.out.print(manufacturerArrayList.get(i).getManufacturer());
+            System.out.print(manufacturerArrayList.get(i).getCode()+": "+manufacturerArrayList.get(i).getManufacturer()+ "\n");
         }
     }
 
     public static Manufacturer getManufacturerArrayList(String code) {
         for (int i = 0; i < manufacturerArrayList.size(); i++) {
-            if (manufacturerArrayList.get(i).equals(code)){
+            if (manufacturerArrayList.get(i).getCode().equals(code)){
                 return manufacturerArrayList.get(i);
             }
         }

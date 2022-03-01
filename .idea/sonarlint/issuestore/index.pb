@@ -111,17 +111,7 @@ i
 9src/ss9_danh_sach/thuc_hanh/list_don_gian/MyListTest.java,c\4\c4e44dc642f11437d280eb6d41511feb170f215b
 e
 5src/ss9_danh_sach/thuc_hanh/list_don_gian/MyList.java,7\5\75880b8a1acae80fb6ac09cd6129cfb00ce5fd80
-i
-9src/ss9_danh_sach/bai_tap/phuong_thuc_arraylist/Test.java,e\6\e63492d7a0b17c06c16d152c7156c8f8add91e5b
-W
-'src/bai_tap_them/services/Services.java,c\f\cf0428c0815bdf9a1e102c5eeefaacec30186162
-d
-4src/bai_tap_them/services/impl/TruckServiceImpl.java,7\f\7f2e4dc9d84172bdffb274c06afed944a338daeb
-U
-%src/bai_tap_them/models/Vehicles.java,6\5\65d8916e9bea29f2146542401a4e99a3888eeaed
-P
- src/bai_tap_them/models/Car.java,2\e\2e1189df8f614b4b618b5c1c3079f5915331c46f
-W
-'src/bai_tap_them/models/Motorcycle.java,8\7\870c0cea78f05405284c9d8a3a915c3495655fb1
 R
 "src/bai_tap_them/models/Truck.java,6\f\6fb9592f20289c03ca4586fc3da0bc776a378651
+g
+7src/lam_thu_bai_tap/manager_student/StudentManager.java,b\1\b199bee666845d5d7a9b60f616e2bf6362f74498

@@ -38,15 +38,20 @@ public class Test {
         Student e = new Student(1, "trinh");
 
         MyList<Student> studentMyList = new MyList<>();
+        MyList<Student> newMyList = new MyList<>();
         studentMyList.add(a);
         studentMyList.add(b);
         studentMyList.add(c);
         studentMyList.add(d);
         studentMyList.add(e);
-        for (int i = 0; i <studentMyList.size() ; i++) {
-            Student student = (Student) studentMyList.elements[i];
-            System.out.println(student.getId());
-            System.out.println(student.getName());
-        }
+        System.out.println(studentMyList.get(2).getName());
+        System.out.println(studentMyList.contains(e));
+
+        newMyList = studentMyList.clone();
+        Student student = newMyList.remove(0);
+        System.out.println(student.getName());
+        System.out.println(newMyList.indexOf(c));
+
     }
+
 }
