@@ -87,8 +87,6 @@ Lsrc/ss4_lop_va_doi_tuong/bai_tap/phuong_trinh_bac_hai/QuadraticEquation.java,8
 +src/lam_thu_bai_tap/lam_thu/GiaiThuat1.java,4\c\4c0a70dcb09e9da29cf5ea08e553e9da15099355
 ^
 .src/ss2_vong_lap_va_mang/bai_tap/MenuHinh.java,8\8\883fad4dea593d79ecda95d076ac4096d3d89738
-S
-#src/oop_review/vehicle/Vehicle.java,2\7\279d5dc26a7f2958aa74b2ae5666b314da4050ab
 z
 Jsrc/ss7_abstract_cass_interface/bai_tap/interface_colorable/Rectangle.java,3\d\3d7dedccb6e8ab9fc37d15069191f01203a09765
 u
@@ -97,10 +95,6 @@ w
 Gsrc/ss7_abstract_cass_interface/bai_tap/interface_colorable/Square.java,8\e\8ee1eb18a97a9746a6a9e5a676abe8fbf939b3c8
 z
 Jsrc/ss7_abstract_cass_interface/bai_tap/interface_colorable/Colorable.java,c\d\cdc33d856ceeb31c2da3768f7c0b6a3d0cedab1b
-Z
-*src/oop_review/vehicle/VehicleManager.java,9\e\9ec0acb5126b13628b9d4c3491d8920fc3a8440f
-P
- src/oop_review/vehicle/Test.java,5\b\5bec0498b64c546136049074769db3d24b05190f
 `
 0src/lam_thu_bai_tap/manager_student/Student.java,f\2\f202d0e4f63c8a8fb8ac85a8ceee99e2157ea3ab
 u
@@ -115,3 +109,7 @@ R
 "src/bai_tap_them/models/Truck.java,6\f\6fb9592f20289c03ca4586fc3da0bc776a378651
 g
 7src/lam_thu_bai_tap/manager_student/StudentManager.java,b\1\b199bee666845d5d7a9b60f616e2bf6362f74498
+S
+#src/ss12_map_tree/bai_tap/Test.java,1\e\1e9b1b217e2bbffb2814606616ad75fdc48f03eb
+w
+Gsrc/ss10_stack_queue/bai_tap/dem_so_lan_xuat_hien/DemSoLanXuatHien.java,f\1\f1f08492e3ff44b8fdc6938307fe733d99086b09
