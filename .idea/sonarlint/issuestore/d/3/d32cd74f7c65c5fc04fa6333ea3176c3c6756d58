@@ -1,0 +1,46 @@
+
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(Çµí‘
+S	java:S106"9Replace this use of System.out or System.err by a logger.(œ“ñÉýÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Å˜âêýÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(çüÒàüÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Î²ÿõ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‡ÿè¨ýÿÿÿÿ
+g	java:S128…"LEnd this switch case with an unconditional break, return or throw statement.(£Þ¾Ëþÿÿÿÿ
+N	java:S106""9Replace this use of System.out or System.err by a logger.(ÓôÏˆ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(‡ÿè¨ýÿÿÿÿ
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(…µ™º
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(Ý•«ßùÿÿÿÿ
+N	java:S106<"9Replace this use of System.out or System.err by a logger.(ªµöÐ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(‚Íž¾
+S	java:S106D"9Replace this use of System.out or System.err by a logger.(‡ÿè¨ýÿÿÿÿ
+N	java:S106I"9Replace this use of System.out or System.err by a logger.(…µ™º
+S	java:S106U"9Replace this use of System.out or System.err by a logger.(Ý•«ßùÿÿÿÿ
+N	java:S106Z"9Replace this use of System.out or System.err by a logger.(ªµöÐ
+S	java:S106^"9Replace this use of System.out or System.err by a logger.(—ªéÓýÿÿÿÿ
+S	java:S106b"9Replace this use of System.out or System.err by a logger.(‡ÿè¨ýÿÿÿÿ
+N	java:S106g"9Replace this use of System.out or System.err by a logger.(…µ™º
+S	java:S106s"9Replace this use of System.out or System.err by a logger.(Ý•«ßùÿÿÿÿ
+N	java:S106x"9Replace this use of System.out or System.err by a logger.(ªµöÐ
+N	java:S106|"9Replace this use of System.out or System.err by a logger.(¾ß¤¶
+S	java:S106~"9Replace this use of System.out or System.err by a logger.(œ“ñÉýÿÿÿÿ
+T	java:S106€"9Replace this use of System.out or System.err by a logger.(Å˜âêýÿÿÿÿ
+T	java:S106‚"9Replace this use of System.out or System.err by a logger.(çüÒàüÿÿÿÿ
+T	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(»áÖÄüÿÿÿÿ
+h
+java:S1192%"MDefine a constant instead of duplicating this literal "3. Deleting
+" 3 times.(çÔ†ýùÿÿÿÿ
+d
+java:S1192"IDefine a constant instead of duplicating this literal "choose: " 4 times.(‡ÿè¨ýÿÿÿÿ
+h
+java:S1192#"MDefine a constant instead of duplicating this literal "1. Creating
+" 3 times.(ƒè³›ûÿÿÿÿ
+j
+java:S11927"ODefine a constant instead of duplicating this literal "index deleting" 3 times.(Ý•«ßùÿÿÿÿ
+v
+java:S1192+"`Define a constant instead of duplicating this literal "Do you want to continue (Y/N)? " 3 times.(…µ™º
+f
+java:S1192<"PDefine a constant instead of duplicating this literal "choose: 1, 2, 3" 3 times.(ªµöÐ
+h
+java:S1192$"MDefine a constant instead of duplicating this literal "2. Updating
+" 3 times.(õžéýÿÿÿÿ

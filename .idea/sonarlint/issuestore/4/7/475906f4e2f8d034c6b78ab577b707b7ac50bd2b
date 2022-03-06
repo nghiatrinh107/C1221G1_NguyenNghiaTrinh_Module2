@@ -1,0 +1,39 @@
+
+A
+java:S3010"+Remove this assignment of "experienceList".(šŸ£
+K
+java:S2209"5Change this instance-reference to a static reference.(šŸ£
+L
+java:S2696$"6Make the enclosing method "static" or remove this set.(šŸ£
+K
+java:S2209$"5Change this instance-reference to a static reference.(šŸ£
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(‡…Ü›ûÿÿÿÿ
+P
+java:S2209."5Change this instance-reference to a static reference.(¾Ã½ñÿÿÿÿÿ
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(ú´¨½
+P
+java:S22096"5Change this instance-reference to a static reference.(àÌÅ÷øÿÿÿÿ
+K
+java:S2209;"5Change this instance-reference to a static reference.(Á˜Ô
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(¨ÒéÒøÿÿÿÿ
+K
+java:S2209?"5Change this instance-reference to a static reference.(ö¶Í‹
+N	java:S106N"9Replace this use of System.out or System.err by a logger.(ú´¨½
+M	java:S106P"9Replace this use of System.out or System.err by a logger.(ú
+S	java:S106R"9Replace this use of System.out or System.err by a logger.(ì‰¾Öüÿÿÿÿ
+N	java:S106W"9Replace this use of System.out or System.err by a logger.(îı™ø
+N	java:S106Y"9Replace this use of System.out or System.err by a logger.(êÉÔû
+S	java:S106["9Replace this use of System.out or System.err by a logger.(º•èÒûÿÿÿÿ
+N	java:S106]"9Replace this use of System.out or System.err by a logger.(«‚ÅÒ
+S	java:S106_"9Replace this use of System.out or System.err by a logger.(öÍ¬–üÿÿÿÿ
+S	java:S106a"9Replace this use of System.out or System.err by a logger.(›Á­€üÿÿÿÿ
+N	java:S106c"9Replace this use of System.out or System.err by a logger.(×­†ı
+S	java:S106e"9Replace this use of System.out or System.err by a logger.(¢®ç¸ùÿÿÿÿ
+N	java:S106h"9Replace this use of System.out or System.err by a logger.(Î™·ö
+N	java:S106j"9Replace this use of System.out or System.err by a logger.(ÌÄŒş
+[
+java:S1192"FDefine a constant instead of duplicating this literal "coder" 4 times.(‚ŞÒ_
+T
+java:S1155M">Use isEmpty() to check whether the collection is empty or not.(ç¨
+x
+java:S1488l"bImmediately return this expression instead of assigning it to the temporary variable "experience".(¸×û

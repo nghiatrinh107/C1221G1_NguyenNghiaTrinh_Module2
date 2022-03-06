@@ -1,0 +1,15 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Î²ÿõ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‡ÿè¨ýÿÿÿÿ
+f	java:S128Q"LEnd this switch case with an unconditional break, return or throw statement.(£Þ¾Ëþÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¿ÿ³‘ûÿÿÿÿ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(‡ÿè¨ýÿÿÿÿ
+N	java:S106."9Replace this use of System.out or System.err by a logger.(ªµöÐ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(¢ï¢ãùÿÿÿÿ
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(‡ÿè¨ýÿÿÿÿ
+N	java:S106C"9Replace this use of System.out or System.err by a logger.(ªµöÐ
+S	java:S106G"9Replace this use of System.out or System.err by a logger.(åŒÜºýÿÿÿÿ
+N	java:S106I"9Replace this use of System.out or System.err by a logger.(­ïé“
+N	java:S106T"9Replace this use of System.out or System.err by a logger.(É¤ƒÞ
+d
+java:S1192"IDefine a constant instead of duplicating this literal "choose: " 3 times.(‡ÿè¨ýÿÿÿÿ

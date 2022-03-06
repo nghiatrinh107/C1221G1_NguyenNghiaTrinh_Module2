@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class ProductManager {
     private static ArrayList<Product> productArrayList = new ArrayList<>();
     static {
-        productArrayList.add(new Product(1,"may 1",500));
-        productArrayList.add(new Product(2,"may 2",300));
-        productArrayList.add(new Product(3,"may 4",600));
-        productArrayList.add(new Product(4,"may 3",800));
+        productArrayList.add(new Product(1,"mayz 1",500));
+        productArrayList.add(new Product(2,"mayx 2",300));
+        productArrayList.add(new Product(3,"mayZ 4",600));
+        productArrayList.add(new Product(4,"mayy 3",800));
     }
     Scanner scanner = new Scanner(System.in);
 
@@ -66,7 +66,7 @@ public class ProductManager {
         System.out.println("search name: ");
         String nameSearch = scanner.nextLine();
         for (int i = 0; i <productArrayList.size() ; i++) {
-            if(productArrayList.get(i).getNameProduct().equals(nameSearch)){
+            if(productArrayList.get(i).getNameProduct().toLowerCase().contains(nameSearch.toLowerCase())){
                 System.out.println(productArrayList.get(i));
             }
         }
