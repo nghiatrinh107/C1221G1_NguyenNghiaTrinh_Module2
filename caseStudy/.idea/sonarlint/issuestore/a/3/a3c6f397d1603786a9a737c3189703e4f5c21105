@@ -1,0 +1,8 @@
+
+f	java:S116"QRename this field "enÄ‘ay" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šíşÈ
+:
+java:S1659"$Declare "enÄ‘ay" on a separate line.(šíşÈ
+j	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËÁí8ê¹Íõ/
+i	java:S100*"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó‡–[8ë¹Íõ/
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´³îàÿÿÿÿÿ8Æ¿Ìõ/
+l	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó‡–[8ò¹Íõ/

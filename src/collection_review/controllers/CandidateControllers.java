@@ -1,5 +1,6 @@
 package collection_review.controllers;
 
+import collection_review.models.Candidates;
 import collection_review.services.impl.ExperienceServicesImpl;
 import collection_review.services.impl.FresherServices;
 import collection_review.services.impl.InternServices;
@@ -138,4 +139,6 @@ public class CandidateControllers {
             }
         }while (flag);
     }
+
 }
+

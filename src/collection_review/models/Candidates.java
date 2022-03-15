@@ -5,10 +5,11 @@ import java.util.Objects;
 
 public abstract class Candidates {
     private int candidateId;
-    private String firstName, lastName,birthDate;
+    private String firstName, lastName, birthDate;
     private long phone;
     private String eMail;
     private CandidateType candidateType;
+
 
     public Candidates() {
     }
