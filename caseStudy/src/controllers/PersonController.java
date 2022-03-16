@@ -5,6 +5,13 @@ import java.util.List;
 import java.util.Scanner;
 
 public class PersonController {
+    protected int id;
+    protected String fullName;
+    protected String birthday;
+    protected String gender;
+    protected int identityCard;
+    protected String email;
+    protected String phone;
     Scanner scanner =new Scanner(System.in);
     private static List<String> genders = new ArrayList();
     static {
@@ -14,22 +21,22 @@ public class PersonController {
 
     public void addNewPerson(){
         System.out.println("Id: ");
-        int id = Integer.parseInt(scanner.nextLine());
+         id = Integer.parseInt(scanner.nextLine());
         System.out.println("Full name: ");
-        String fullName = scanner.nextLine();
+         fullName = scanner.nextLine();
         System.out.println("Birthday: ");
-        String birthday = scanner.nextLine();
+         birthday = scanner.nextLine();
         for (int i = 0; i <genders.size() ; i++) {
             System.out.println(i + " " +genders.get(i));
         }
         System.out.println("Gender: ");
         int indexGender = Integer.parseInt(scanner.nextLine());
-        String gender = genders.get(indexGender);
+         gender = genders.get(indexGender);
         System.out.println("Identity Card");
-        int identityCard = Integer.parseInt(scanner.nextLine());
+        identityCard = Integer.parseInt(scanner.nextLine());
         System.out.println("Email");
-        String email = scanner.nextLine();
+        email = scanner.nextLine();
         System.out.println("Phone");
-        String phone = scanner.nextLine();
+        phone = scanner.nextLine();
     }
 }

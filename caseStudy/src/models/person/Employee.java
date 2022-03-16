@@ -3,12 +3,12 @@ package models.person;
 public class Employee extends Person {
     private String degree;
     private String position;
-    private int salary;
+    private String salary;
 
     public Employee() {
     }
 
-    public Employee(int id, String fullName, String birthday, String gender, int identityCard, String email, String phone, String degree, String position, int salary) {
+    public Employee(int id, String fullName, String birthday, String gender, int identityCard, String email, String phone, String degree, String position, String salary) {
         super(id, fullName, birthday, gender, identityCard, email, phone);
         this.degree = degree;
         this.position = position;
@@ -31,20 +31,20 @@ public class Employee extends Person {
         this.position = position;
     }
 
-    public int getSalary() {
+    public String getSalary() {
         return salary;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(String salary) {
         this.salary = salary;
     }
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "degree=" + degree +
-                ", position=" + position +
-                ", salary=" + salary +
-                "} " + super.toString();
+        return "Employee{ " + super.toString() +
+                ", degree= " + degree +
+                ", position= " + position +
+                ", salary= " + salary +
+                "} ";
     }
 }

@@ -1,28 +1,28 @@
 package models.facility;
 
 public class Room extends Facility {
-        private String Complimentary;
+        private String complimentary;
 
     public Room() {
     }
 
-    public Room(String hotelService, double roomArea, int rate, int maximumCapacity, String rentStyle, String complimentary) {
-        super(hotelService, roomArea, rate, maximumCapacity, rentStyle);
-        Complimentary = complimentary;
+    public Room(int idFacility,String hotelService, double roomArea, int rate, int maximumCapacity, String rentStyle, String complimentary) {
+        super(idFacility,hotelService, roomArea, rate, maximumCapacity, rentStyle);
+        this.complimentary = complimentary;
     }
 
     public String getComplimentary() {
-        return Complimentary;
+        return complimentary;
     }
 
     public void setComplimentary(String complimentary) {
-        Complimentary = complimentary;
+        this.complimentary = complimentary;
     }
 
     @Override
     public String toString() {
-        return "Room{" +
-                "Complimentary='" + Complimentary + '\'' +
-                "} " + super.toString();
+        return "Room{" + super.toString() +
+                ", complimentary=" + complimentary +
+                "} " ;
     }
 }

@@ -1,6 +1,7 @@
 package models.facility;
 
 public abstract class Facility {
+    private int idFacility;
     private String hotelService;
     private double roomArea;
     private int rate;
@@ -10,12 +11,21 @@ public abstract class Facility {
     public Facility() {
     }
 
-    public Facility(String hotelService, double roomArea, int rate, int maximumCapacity, String rentStyle) {
+    public Facility(int idFacility,String hotelService, double roomArea, int rate, int maximumCapacity, String rentStyle) {
+        this.idFacility = idFacility;
         this.hotelService = hotelService;
         this.roomArea = roomArea;
         this.rate = rate;
         this.maximumCapacity = maximumCapacity;
         this.rentStyle = rentStyle;
+    }
+
+    public int getIdFacility() {
+        return idFacility;
+    }
+
+    public void setIdFacility(int idFacility) {
+        this.idFacility = idFacility;
     }
 
     public String getHotelService() {
@@ -60,12 +70,11 @@ public abstract class Facility {
 
     @Override
     public String toString() {
-        return "Facility{" +
-                "hotelService='" + hotelService + '\'' +
+        return  "idFacility=" + idFacility +
+                ", hotelService=" + hotelService + '\'' +
                 ", roomArea=" + roomArea +
                 ", rate=" + rate +
                 ", maximumCapacity=" + maximumCapacity +
-                ", rentStyle='" + rentStyle + '\'' +
-                '}';
+                ", rentStyle=" + rentStyle;
     }
 }

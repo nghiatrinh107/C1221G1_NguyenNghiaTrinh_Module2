@@ -3,6 +3,8 @@ package controllers;
 import java.util.Scanner;
 
 public class FuramaController {
+    private static CustomerController customer = new CustomerController();
+    private static EmployeeController employee = new EmployeeController();
     public void displayMainMenu() {
         Scanner scanner = new Scanner(System.in);
         boolean flag = true;
@@ -27,10 +29,13 @@ public class FuramaController {
                     int chooseEmployee = Integer.parseInt(scanner.nextLine());
                     switch (chooseEmployee) {
                         case 1:
+                            employee.display();
                             break;
                         case 2:
+                            employee.addEmployee();
                             break;
                         case 3:
+                            employee.edit();
                             break;
                         case 4:
                             break;
@@ -48,10 +53,13 @@ public class FuramaController {
                     int chooseCustomer = Integer.parseInt(scanner.nextLine());
                     switch (chooseCustomer) {
                         case 1:
+                            customer.display();
                             break;
                         case 2:
+                            customer.addCustomer();
                             break;
                         case 3:
+                            customer.edit();
                             break;
                         case 4:
                             break;
