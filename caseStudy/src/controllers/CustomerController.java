@@ -1,7 +1,7 @@
 package controllers;
 
 import models.person.Customer;
-import services.impl.Person.CustomerServiceImpl;
+import services.impl.person.CustomerServiceImpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +31,7 @@ public class CustomerController extends PersonController{
     }
 
 
-    private static List<String> memberships = new ArrayList();
+    protected static List<String> memberships = new ArrayList();
     static {
         memberships.add(new String("Diamond"));
         memberships.add(new String("Platinum"));

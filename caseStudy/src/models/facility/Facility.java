@@ -1,7 +1,7 @@
 package models.facility;
 
 public abstract class Facility {
-    private int idFacility;
+    private String idFacility;
     private String hotelService;
     private double roomArea;
     private int rate;
@@ -11,7 +11,7 @@ public abstract class Facility {
     public Facility() {
     }
 
-    public Facility(int idFacility,String hotelService, double roomArea, int rate, int maximumCapacity, String rentStyle) {
+    public Facility(String idFacility,String hotelService, double roomArea, int rate, int maximumCapacity, String rentStyle) {
         this.idFacility = idFacility;
         this.hotelService = hotelService;
         this.roomArea = roomArea;
@@ -20,11 +20,11 @@ public abstract class Facility {
         this.rentStyle = rentStyle;
     }
 
-    public int getIdFacility() {
+    public String getIdFacility() {
         return idFacility;
     }
 
-    public void setIdFacility(int idFacility) {
+    public void setIdFacility(String idFacility) {
         this.idFacility = idFacility;
     }
 

@@ -1,7 +1,7 @@
 package controllers;
 
 import models.person.Employee;
-import services.impl.Person.EmployeeServiceImpl;
+import services.impl.person.EmployeeServiceImpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,14 +29,14 @@ public class EmployeeController extends PersonController{
         Employee employee = new Employee(super.id, super.fullName, super.birthday, super.gender, super.identityCard, super.email, super.phone,degree,position,salary);
         return employee;
     }
-    private static List<String> degrees = new ArrayList<>();
+    protected static List<String> degrees = new ArrayList<>();
     static {
         degrees.add(new String("INTERMEDIATE"));
         degrees.add(new String("ASSOCIATE"));
         degrees.add(new String("UNIVERSITY"));
         degrees.add(new String("POSTGRADUATE"));
     }
-    private static List<String> positions = new ArrayList<>();
+    protected static List<String> positions = new ArrayList<>();
     static {
         positions.add(new String("RECEPTIONIST"));
         positions.add(new String("WAITER"));

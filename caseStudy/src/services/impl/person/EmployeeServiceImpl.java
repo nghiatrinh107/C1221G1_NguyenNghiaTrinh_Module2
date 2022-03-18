@@ -1,5 +1,6 @@
-package services.impl.Person;
+package services.impl.person;
 
+import libs.EmployeeLib;
 import models.person.Employee;
 import services.EmployeeService;
 
@@ -78,8 +79,10 @@ public class EmployeeServiceImpl implements EmployeeService {
                     break;
                 case 8:
                     System.out.println("edit Degree: ");
-                    String editDegree = scanner.nextLine();
-                    employeeList.get(index).setDegree(editDegree);
+                    EmployeeLib.display(EmployeeLib.degrees);
+                    System.out.println("Select index: ");
+                    int  indexDegree = Integer.parseInt( scanner.nextLine());
+                    employeeList.get(index).setDegree(EmployeeLib.degrees.get(indexDegree));
                     break;
                 case 7:
                     System.out.println("edit phone: ");
@@ -88,12 +91,14 @@ public class EmployeeServiceImpl implements EmployeeService {
                     break;
                 case 9:
                     System.out.println("edit position: ");
-                    String editPosition = scanner.nextLine();
-                    employeeList.get(index).setPosition(editPosition);
+                    EmployeeLib.display(EmployeeLib.positions);
+                    int  indexPosition = Integer.parseInt( scanner.nextLine());
+                    employeeList.get(index).setPosition(EmployeeLib.positions.get(indexPosition));
                     break;
                 case 10:
                     System.out.println("edit salary: ");
                     String editSalary = scanner.nextLine();
+                    System.out.println("Select index: ");
                     employeeList.get(index).setSalary(editSalary);
                     break;
                 case 0:

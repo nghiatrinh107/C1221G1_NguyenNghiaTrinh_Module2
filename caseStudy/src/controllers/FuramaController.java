@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class FuramaController {
     private static CustomerController customer = new CustomerController();
     private static EmployeeController employee = new EmployeeController();
+    private static FacilityController facility = new FacilityController();
     public void displayMainMenu() {
         Scanner scanner = new Scanner(System.in);
         boolean flag = true;
@@ -15,7 +16,7 @@ public class FuramaController {
                     "3. Facility Management \n" +
                     "4. Booking Management\n" +
                     "5. Promotion Management\n" +
-                    "0. exit\n");
+                    "6. exit\n");
             System.out.print("choose: ");
             int chooseMenu = Integer.parseInt(scanner.nextLine());
             switch (chooseMenu) {
@@ -77,8 +78,10 @@ public class FuramaController {
                     int chooseFacility = Integer.parseInt(scanner.nextLine());
                     switch (chooseFacility) {
                         case 1:
+                            facility.display();
                             break;
                         case 2:
+                            facility.addNewFacility();
                             break;
                         case 3:
                             break;
@@ -134,7 +137,8 @@ public class FuramaController {
                     }
                     break;
                 case 6:
-                    System.exit(6);
+                    flag = false;
+                    break;
                 default:
                     System.out.println("choose: 1, 2, 3, 4, 5, 6");
             }

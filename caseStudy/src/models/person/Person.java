@@ -83,4 +83,14 @@ public abstract class Person {
                 ", identityCard= " + identityCard +
                 ", phone= " + phone;
     }
+    public String getInfoToCSV(){
+        return " id " +
+                "," + fullName +
+                "," + email +
+                "," + birthday +
+                "," + gender +
+                "," + identityCard +
+                "," + phone;
+    }
+
 }
