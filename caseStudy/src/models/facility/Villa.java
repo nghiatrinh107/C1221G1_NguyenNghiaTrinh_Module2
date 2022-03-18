@@ -36,4 +36,9 @@ public class Villa extends Facility {
                 ", floor=" + floor +
                 "} " ;
     }
+
+    @Override
+    public String getInfoToCSV() {
+        return super.getInfoToCSV()+","+kindOfRoom+","+floor;
+    }
 }

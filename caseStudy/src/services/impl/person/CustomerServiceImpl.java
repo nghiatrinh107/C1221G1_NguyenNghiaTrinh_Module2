@@ -1,8 +1,8 @@
 package services.impl.person;
 
-import controllers.EmployeeController;
 import models.person.Customer;
 import services.CustomerService;
+import utils.ReadAndWrite;
 
 
 import java.util.LinkedList;
@@ -12,6 +12,11 @@ import java.util.Scanner;
 public class CustomerServiceImpl implements CustomerService {
     private static List<Customer> customerList = new LinkedList<>();
     Scanner scanner = new Scanner(System.in);
+    static final String CUSTOMER_CSV = "src\\data\\customer.csv";
+
+    static {
+        customerList = ReadAndWrite.readCustomerListFromCSV(CUSTOMER_CSV);
+    }
 
     public CustomerServiceImpl() {
     }
@@ -34,6 +39,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public void add(Customer customer) {
         customerList.add(customer);
+        ReadAndWrite.writeListPersonToCSV(CUSTOMER_CSV,customerList);
     }
 
     @Override
@@ -105,5 +111,6 @@ public class CustomerServiceImpl implements CustomerService {
                     System.out.println("choose 0,1,2,3,4,5,6,7,8,9");
             }
         } while (chooseMenu != 0);
+        ReadAndWrite.writeListPersonToCSV(CUSTOMER_CSV,customerList);
     }
 }

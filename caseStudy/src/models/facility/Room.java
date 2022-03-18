@@ -25,4 +25,9 @@ public class Room extends Facility {
                 ", complimentary=" + complimentary +
                 "} " ;
     }
+
+    @Override
+    public String getInfoToCSV() {
+        return super.getInfoToCSV()+","+complimentary;
+    }
 }

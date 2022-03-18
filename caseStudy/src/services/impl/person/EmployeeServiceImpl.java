@@ -3,14 +3,20 @@ package services.impl.person;
 import libs.EmployeeLib;
 import models.person.Employee;
 import services.EmployeeService;
+import utils.ReadAndWrite;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class EmployeeServiceImpl implements EmployeeService {
-    List<Employee> employeeList = new ArrayList<>();
+   private static List<Employee> employeeList = new ArrayList<>();
     Scanner scanner =new Scanner(System.in);
+    static final String EMPLOYEE_CSV ="src\\data\\employee.csv";
+
+    static {
+        employeeList = ReadAndWrite.readEmployeeListFromCSV(EMPLOYEE_CSV);
+    }
 
     public EmployeeServiceImpl(List<Employee> employees) {
         this.employeeList = employees;
@@ -107,6 +113,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                     System.out.println("choose 0,1,2,3,4,5,6,7,8,9,10");
             }
         } while (chooseMenu != 0);
+        ReadAndWrite.writeListPersonToCSV(EMPLOYEE_CSV,employeeList);
     }
 
     @Override
@@ -119,6 +126,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public void add(Employee employee) {
         employeeList.add(employee);
+        ReadAndWrite.writeListPersonToCSV(EMPLOYEE_CSV,employeeList);
     }
 
 

@@ -47,4 +47,9 @@ public class House extends Facility {
                 ", floor=" + floor +
                 "} " ;
     }
+
+    @Override
+    public String getInfoToCSV() {
+        return super.getInfoToCSV()+","+kindOfRoom+","+swimmingPool+","+floor;
+    }
 }

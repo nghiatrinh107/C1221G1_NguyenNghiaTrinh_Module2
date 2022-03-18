@@ -1,13 +1,18 @@
 package services.impl.facility;
 
 import models.facility.House;
+import utils.ReadAndWrite;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class HouseServiceImpl implements services.HouseService {
     private static List<House> houseList = new ArrayList<>();
+    static final String HOUSE_CSV = "src\\data\\house.csv";
 
+    static {
+        houseList = ReadAndWrite.readHouseListFromCSV(HOUSE_CSV);
+    }
     public HouseServiceImpl() {
     }
 
@@ -29,6 +34,7 @@ public class HouseServiceImpl implements services.HouseService {
     @Override
     public void add(House house) {
         houseList.add(house);
+        ReadAndWrite.writeListFacilityToCSV(HOUSE_CSV,houseList);
     }
 
     @Override

@@ -130,15 +130,15 @@ public class FacilityController {
     }
     private String inputIdVilla(){
         System.out.println("Id (SVVL-xxx)");
-        return RegexData.regexString(scanner.nextLine(),REGEX_ID_VILLA,"Fail! ID Format: SVVL-xxx");
+        return RegexData.regexString(scanner.nextLine(),REGEX_ID_VILLA,"Fail! ID Format: SVVL-xxxx");
     }
     private String inputIdHouse(){
         System.out.println("Id (SVHO-xxx)");
-        return RegexData.regexString(scanner.nextLine(),REGEX_ID_HOUSE,"Fail! ID Format: SVHO-xxx");
+        return RegexData.regexString(scanner.nextLine(),REGEX_ID_HOUSE,"Fail! ID Format: SVHO-xxxx");
     }
     private String inputIdRoom(){
         System.out.println("Id (SVRO-xxx)");
-        return RegexData.regexString(scanner.nextLine(),REGEX_ID_ROOM,"Fail! ID Format: SVRO-xxx");
+        return RegexData.regexString(scanner.nextLine(),REGEX_ID_ROOM,"Fail! ID Format: SVRO-xxxx");
     }
     private String inputName(){
         return RegexData.regexString(scanner.nextLine(),REGEX_NAME,"Fail! Format: Xxxx Xxxx");

@@ -84,13 +84,12 @@ public abstract class Person {
                 ", phone= " + phone;
     }
     public String getInfoToCSV(){
-        return " id " +
+        return id +
                 "," + fullName +
-                "," + email +
                 "," + birthday +
                 "," + gender +
                 "," + identityCard +
+                "," + email +
                 "," + phone;
     }
-
 }

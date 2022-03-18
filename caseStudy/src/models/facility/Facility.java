@@ -71,10 +71,18 @@ public abstract class Facility {
     @Override
     public String toString() {
         return  "idFacility=" + idFacility +
-                ", hotelService=" + hotelService + '\'' +
+                ", hotelService=" + hotelService +
                 ", roomArea=" + roomArea +
                 ", rate=" + rate +
                 ", maximumCapacity=" + maximumCapacity +
                 ", rentStyle=" + rentStyle;
+    }
+    public String getInfoToCSV(){
+        return  idFacility +
+                "," + hotelService +
+                "," + roomArea +
+                "," + rate +
+                "," + maximumCapacity +
+                "," + rentStyle;
     }
 }
