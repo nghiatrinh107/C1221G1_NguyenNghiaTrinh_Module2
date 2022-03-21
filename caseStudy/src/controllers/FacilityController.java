@@ -20,10 +20,11 @@ public class FacilityController {
     private int rate;
     private int maximumCapacity;
     private String rentStyle;
+    private int choice = -1;
     FacilityServiceImpl facilityService = new FacilityServiceImpl();
     HouseServiceImpl houseService = new HouseServiceImpl();
     RoomServiceImpl roomService = new RoomServiceImpl();
-    VillaServiceImpl villaService =new VillaServiceImpl();
+    VillaServiceImpl villaService = new VillaServiceImpl();
     public static final String REGEX_ID_VILLA = "^SVVL-\\d{4}$";
     public static final String REGEX_ID_ROOM = "^SVRO-\\d{4}$";
     public static final String REGEX_ID_HOUSE = "^SVHO-\\d{4}$";
@@ -42,21 +43,14 @@ public class FacilityController {
         rate = Integer.parseInt(inputRate());
         System.out.println("Maximum Capacity");
         maximumCapacity = Integer.parseInt(scanner.nextLine());
-        for (int i = 0; i < rentStyles.size(); i++) {
-            System.out.println(i + " " + rentStyles.get(i));
-        }
-        System.out.println("rentStyle");
-        int indexRentStyle = Integer.parseInt(scanner.nextLine());
-        rentStyle = rentStyles.get(indexRentStyle);
-    }
-
-    private static List<String> rentStyles = new ArrayList();
-
-    static {
-        rentStyles.add(new String("hour"));
-        rentStyles.add(new String("day"));
-        rentStyles.add(new String("month"));
-        rentStyles.add(new String("year"));
+        do {
+            for (int i = 0; i < rentStyles.size(); i++) {
+                System.out.println(i + " " + rentStyles.get(i));
+            }
+            System.out.println("rentStyle");
+            choice = Integer.parseInt(scanner.nextLine());
+        } while (choice > rentStyles.size());
+        rentStyle = rentStyles.get(choice);
     }
 
     public void addNewVilla() {
@@ -123,31 +117,47 @@ public class FacilityController {
                 System.out.println("choose: 1, 2, 3, 4");
         }
     }
-    public void display(){
+
+    public void display() {
         houseService.display();
         roomService.display();
         villaService.display();
     }
-    private String inputIdVilla(){
+
+    private String inputIdVilla() {
         System.out.println("Id (SVVL-xxx)");
-        return RegexData.regexString(scanner.nextLine(),REGEX_ID_VILLA,"Fail! ID Format: SVVL-xxxx");
+        return RegexData.regexString(scanner.nextLine(), REGEX_ID_VILLA, "Fail! ID Format: SVVL-xxxx");
     }
-    private String inputIdHouse(){
+
+    private String inputIdHouse() {
         System.out.println("Id (SVHO-xxx)");
-        return RegexData.regexString(scanner.nextLine(),REGEX_ID_HOUSE,"Fail! ID Format: SVHO-xxxx");
+        return RegexData.regexString(scanner.nextLine(), REGEX_ID_HOUSE, "Fail! ID Format: SVHO-xxxx");
     }
-    private String inputIdRoom(){
+
+    private String inputIdRoom() {
         System.out.println("Id (SVRO-xxx)");
-        return RegexData.regexString(scanner.nextLine(),REGEX_ID_ROOM,"Fail! ID Format: SVRO-xxxx");
+        return RegexData.regexString(scanner.nextLine(), REGEX_ID_ROOM, "Fail! ID Format: SVRO-xxxx");
     }
-    private String inputName(){
-        return RegexData.regexString(scanner.nextLine(),REGEX_NAME,"Fail! Format: Xxxx Xxxx");
+
+    private String inputName() {
+        return RegexData.regexString(scanner.nextLine(), REGEX_NAME, "Fail! Format: Xxxx Xxxx");
     }
-    private String inputArea(){
-        return RegexData.regexString(scanner.nextLine(),REGEX_AREA,"Fail! Area > 30 ");
+
+    private String inputArea() {
+        return RegexData.regexString(scanner.nextLine(), REGEX_AREA, "Fail! Area > 30 ");
     }
-    private String inputRate(){
-        return RegexData.regexString(scanner.nextLine(),REGEX_RATE,"Fail! Rate > 0 ");
+
+    private String inputRate() {
+        return RegexData.regexString(scanner.nextLine(), REGEX_RATE, "Fail! Rate > 0 ");
+    }
+
+    private static List<String> rentStyles = new ArrayList();
+
+    static {
+        rentStyles.add(new String("hour"));
+        rentStyles.add(new String("day"));
+        rentStyles.add(new String("month"));
+        rentStyles.add(new String("year"));
     }
 }
 

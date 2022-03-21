@@ -4,15 +4,16 @@ import libs.EmployeeLib;
 import models.person.Employee;
 import services.EmployeeService;
 import utils.ReadAndWrite;
+import utils.UserException;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class EmployeeServiceImpl implements EmployeeService {
-   private static List<Employee> employeeList = new ArrayList<>();
-    Scanner scanner =new Scanner(System.in);
-    static final String EMPLOYEE_CSV ="src\\data\\employee.csv";
+    private static List<Employee> employeeList = new ArrayList<>();
+    Scanner scanner = new Scanner(System.in);
+    static final String EMPLOYEE_CSV = "src\\data\\employee.csv";
 
     static {
         employeeList = ReadAndWrite.readEmployeeListFromCSV(EMPLOYEE_CSV);
@@ -50,8 +51,14 @@ public class EmployeeServiceImpl implements EmployeeService {
                     "9. Position\n" +
                     "10. Salary\n" +
                     "0. exit\n");
-            System.out.print("choose: ");
-            chooseMenu = Integer.parseInt(scanner.nextLine());
+            do {
+                try{
+                    chooseMenu= inputChoose();
+                    break;
+                }catch (UserException userException){
+                    System.out.println(userException.getMessage());
+                }
+            }while (true);
             switch (chooseMenu) {
                 case 1:
                     System.out.print("edit Id:");
@@ -87,7 +94,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                     System.out.println("edit Degree: ");
                     EmployeeLib.display(EmployeeLib.degrees);
                     System.out.println("Select index: ");
-                    int  indexDegree = Integer.parseInt( scanner.nextLine());
+                    int indexDegree = Integer.parseInt(scanner.nextLine());
                     employeeList.get(index).setDegree(EmployeeLib.degrees.get(indexDegree));
                     break;
                 case 7:
@@ -98,7 +105,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                 case 9:
                     System.out.println("edit position: ");
                     EmployeeLib.display(EmployeeLib.positions);
-                    int  indexPosition = Integer.parseInt( scanner.nextLine());
+                    int indexPosition = Integer.parseInt(scanner.nextLine());
                     employeeList.get(index).setPosition(EmployeeLib.positions.get(indexPosition));
                     break;
                 case 10:
@@ -113,12 +120,12 @@ public class EmployeeServiceImpl implements EmployeeService {
                     System.out.println("choose 0,1,2,3,4,5,6,7,8,9,10");
             }
         } while (chooseMenu != 0);
-        ReadAndWrite.writeListPersonToCSV(EMPLOYEE_CSV,employeeList);
+        ReadAndWrite.writeListPersonToCSV(EMPLOYEE_CSV, employeeList);
     }
 
     @Override
     public void display() {
-        for (int i = 0; i < employeeList.size() ; i++) {
+        for (int i = 0; i < employeeList.size(); i++) {
             System.out.println(employeeList.get(i));
         }
     }
@@ -126,8 +133,16 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public void add(Employee employee) {
         employeeList.add(employee);
-        ReadAndWrite.writeListPersonToCSV(EMPLOYEE_CSV,employeeList);
+        ReadAndWrite.writeListPersonToCSV(EMPLOYEE_CSV, employeeList);
     }
 
+    private int inputChoose() throws UserException {
 
+        System.out.print("choose: ");
+        String input = scanner.nextLine();
+        if (!input.matches("^\\+*\\d+$")){
+            throw new UserException("aaa");
+        }
+            return Integer.parseInt(input);
+    }
 }

@@ -39,8 +39,5 @@ public class RoomServiceImpl implements RoomService {
         ReadAndWrite.writeListFacilityToCSV(ROOM_CSV,roomList);
     }
 
-    @Override
-    public void edit(int id) {
 
-    }
 }

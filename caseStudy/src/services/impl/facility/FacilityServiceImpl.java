@@ -37,8 +37,5 @@ public class FacilityServiceImpl implements FacilityService {
         facilityMap.put(facility, 0);
     }
 
-    @Override
-    public void edit(int id) {
 
-    }
 }

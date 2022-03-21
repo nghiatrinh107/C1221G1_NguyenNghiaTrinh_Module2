@@ -3,6 +3,7 @@ package services.impl.person;
 import models.person.Customer;
 import services.CustomerService;
 import utils.ReadAndWrite;
+import utils.UserException;
 
 
 import java.util.LinkedList;
@@ -39,7 +40,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public void add(Customer customer) {
         customerList.add(customer);
-        ReadAndWrite.writeListPersonToCSV(CUSTOMER_CSV,customerList);
+        ReadAndWrite.writeListPersonToCSV(CUSTOMER_CSV, customerList);
     }
 
     @Override
@@ -57,8 +58,14 @@ public class CustomerServiceImpl implements CustomerService {
                     "8. Membership\n" +
                     "9. Address\n" +
                     "0. exit\n");
-            System.out.print("choose: ");
-            chooseMenu = Integer.parseInt(scanner.nextLine());
+            do {
+                try {
+                    chooseMenu = inputChooseMenu();
+                    break;
+                } catch (UserException userException) {
+                    System.out.println(userException.getMessage());
+                }
+            } while (true);
             switch (chooseMenu) {
                 case 1:
                     System.out.print("edit Id:");
@@ -111,6 +118,15 @@ public class CustomerServiceImpl implements CustomerService {
                     System.out.println("choose 0,1,2,3,4,5,6,7,8,9");
             }
         } while (chooseMenu != 0);
-        ReadAndWrite.writeListPersonToCSV(CUSTOMER_CSV,customerList);
+        ReadAndWrite.writeListPersonToCSV(CUSTOMER_CSV, customerList);
+    }
+
+    private int inputChooseMenu() throws UserException {
+        System.out.print("choose: ");
+        String input = scanner.nextLine();
+        if (!input.matches("^\\+*\\d+$")) {
+            throw new UserException("aaa");
+        }
+        return Integer.parseInt(input);
     }
 }

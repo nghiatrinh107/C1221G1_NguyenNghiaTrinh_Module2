@@ -37,8 +37,5 @@ public class HouseServiceImpl implements services.HouseService {
         ReadAndWrite.writeListFacilityToCSV(HOUSE_CSV,houseList);
     }
 
-    @Override
-    public void edit(int id) {
 
-    }
 }
